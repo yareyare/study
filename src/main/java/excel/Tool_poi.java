@@ -30,7 +30,8 @@ public class Tool_poi {
         
         String org = "么么贷";
        
-        POIFSFileSystem pfs = new POIFSFileSystem(new FileInputStream(new File("E:/students.xlsx"))); 
+//        POIFSFileSystem pfs = new POIFSFileSystem(new FileInputStream(new File("E:/students.xlsx")));
+        POIFSFileSystem pfs = new POIFSFileSystem(new FileInputStream(new File("/Users/ivy/students.xlsx")));
         EncryptionInfo encInfo = new EncryptionInfo(pfs); 
         Decryptor decryptor = new EcmaDecryptor(encInfo); 
         decryptor.verifyPassword("hello");         
