@@ -16,7 +16,7 @@ public class ExchangeTest {
     public static void main(String[] args) {
         ExecutorService pool = Executors.newCachedThreadPool();
 
-        Exchanger exchanger = new Exchanger();
+        final Exchanger exchanger = new Exchanger();
 
         Runnable buyer = new Runnable() {
             @Override

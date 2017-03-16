@@ -17,7 +17,7 @@ public class CyclicBarrierTest {
 
     public static void main(String[] args) {
         ExecutorService pool = Executors.newCachedThreadPool();
-        CyclicBarrier cyclicBarrier = new CyclicBarrier(COUNT);
+        final CyclicBarrier cyclicBarrier = new CyclicBarrier(COUNT);
 
         for (int i = 0; i < COUNT; i++) {
             Runnable r = new Runnable() {

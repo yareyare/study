@@ -12,9 +12,9 @@ import java.util.concurrent.BlockingQueue;
 public class BlockingQueueTest {
 
     public static void main(String[] args) {
-        BlockingQueue queue = new ArrayBlockingQueue(3);   //容量为3的队列
+        final BlockingQueue queue = new ArrayBlockingQueue(3);   //容量为3的队列
         for (int i = 1; i <= 1; i++) {
-            Integer c = i;
+            final Integer c = i;
             Thread t = new Thread() {
                 @Override
                 public void run() {

@@ -1,7 +1,0 @@
-*.log
-.gitignore
-.idea/
-.DS_Store
-*.DS_Store
-target/
-study.iml

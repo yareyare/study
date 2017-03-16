@@ -15,7 +15,7 @@ public class SemaphoreTest {
 
     public static void main(String[] args) {
         ExecutorService pool = Executors.newCachedThreadPool();
-        Semaphore semaphore = new Semaphore(3, true);//线程池共用3个信号量
+        final Semaphore semaphore = new Semaphore(3, true);//线程池共用3个信号量
 
 
 

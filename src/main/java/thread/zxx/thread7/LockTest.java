@@ -13,7 +13,7 @@ public class LockTest {
     }
 
     private void init() {
-        Outputer out = new Outputer();
+        final Outputer out = new Outputer();
         new Thread(new Runnable() {
             @Override
             public void run() {
