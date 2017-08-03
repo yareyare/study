@@ -12,9 +12,9 @@ public class CollectionModifyExceptionTest {
 
     public static void main(String[] args) {
 
-//        Collection c  = new ArrayList<User>();
+        Collection c  = new ArrayList<User>();
 
-        Collection c = new CopyOnWriteArrayList<User>();
+//        Collection c = new CopyOnWriteArrayList<User>();
 
         c.add(new User("张三",20));
         c.add(new User("李四",10));
