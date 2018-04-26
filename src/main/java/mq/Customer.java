@@ -30,6 +30,7 @@ public class Customer {
             public void handleDelivery(String consumerTag, Envelope envelope,
                                        AMQP.BasicProperties properties, byte[] body)
                     throws IOException {
+                System.out.println(consumerTag+" "+envelope.getDeliveryTag()+""+envelope.getExchange()+" "+envelope.getRoutingKey());
                 String message = new String(body, "UTF-8");
                 System.out.println("Customer Received '" + message + "'");
             }

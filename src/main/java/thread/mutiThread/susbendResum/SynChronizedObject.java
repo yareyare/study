@@ -32,7 +32,7 @@ class Runner{
             Thread thread2 = new Thread(){
                 @Override
                 public void run() {
-                    //object.printString();
+                    object.printString();
                     System.out.println("thread2 启动了，但进入不了pringString() 方法，只打印一个begin");
                     System.out.println("因为pringString()方法被a线程锁定并且永远suspend暂停了！");
                     object.printString();

@@ -12,6 +12,6 @@ public class RegSingletonChild extends RegSingleton{
     //静态方法工厂  
     public static RegSingletonChild getInstance() {  
         return (RegSingletonChild) RegSingleton  
-                .getInstance("com.chengshu.singleton.RegSingletonChild");  
+                .getInstance("singleton.RegSingletonChild");
     }  
 }
