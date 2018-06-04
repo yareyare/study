@@ -20,6 +20,7 @@ public enum Code {
     PHONE_RULE_ERROR(10409,"判断手机号是否在信用卡公司限制范围内失败"),
     USER_EXIST_ERROR(10410,"用户已经推送过"),
     PARAM_CODED(10411,"有打码字段"),
+
     
     // 20000 参数方法返回值错误
     PARAMTER_INCORRECT(200100, "参数不正确"),
@@ -45,6 +46,22 @@ public enum Code {
 
     private Code(Integer code, String note) {
         this.note = note;
+        this.code = code;
+    }
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public void setCode(Integer code) {
         this.code = code;
     }
 }

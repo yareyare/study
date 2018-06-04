@@ -8,7 +8,7 @@ import java.util.Calendar;
 
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.poifs.crypt.Decryptor;
-import org.apache.poi.poifs.crypt.EcmaDecryptor;
+//import org.apache.poi.poifs.crypt.EcmaDecryptor;
 import org.apache.poi.poifs.crypt.EncryptionInfo;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import org.apache.poi.ss.util.WorkbookUtil;
@@ -33,7 +33,7 @@ public class Tool_poi {
 //        POIFSFileSystem pfs = new POIFSFileSystem(new FileInputStream(new File("E:/students.xlsx")));
         POIFSFileSystem pfs = new POIFSFileSystem(new FileInputStream(new File("/Users/ivy/students.xlsx")));
         EncryptionInfo encInfo = new EncryptionInfo(pfs); 
-        Decryptor decryptor = new EcmaDecryptor(encInfo); 
+        Decryptor decryptor = null;//new EcmaDecryptor(encInfo);
         decryptor.verifyPassword("hello");         
         // 第一步，创建一个webbook，对应一个Excel文件  
         XSSFWorkbook wb = new XSSFWorkbook(decryptor.getDataStream(pfs));  
