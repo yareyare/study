@@ -1,8 +1,8 @@
 package yituFace;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.activiti.engine.impl.util.json.JSONObject;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.net.SocketTimeoutException;
@@ -72,6 +72,7 @@ public class SampleCodeV1PairVerify {
 		 * Step 4 校验答案
 		 */
 		JSONObject responseJson = new JSONObject(result);
+
 		if (responseJson.getInt("rtn") == 0) {
 			if (responseJson.getInt("pair_verify_result") == 0) {
 				System.out.println("比对通过");

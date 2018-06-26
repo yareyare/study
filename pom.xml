@@ -45,7 +45,7 @@
 		<guava.version>19.0</guava.version>
 		<google.gson.version>2.3</google.gson.version>
 		<jedis.version>2.0.0</jedis.version>
-		<jxcell.version>V1.0.0.01</jxcell.version>
+		<!--<jxcell.version>V1.0.0.01</jxcell.version>-->
 		<netty.version>5.0.0.Alpha1</netty.version>
 	</properties>
 	<dependencies>
@@ -322,11 +322,11 @@
 		</dependency>
 
 		<!-- jxcell -->
-		<dependency>
-			<groupId>org.juxinli.jxcell</groupId>
-			<artifactId>jxcell</artifactId>
-			<version>${jxcell.version}</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.juxinli.jxcell</groupId>-->
+			<!--<artifactId>jxcell</artifactId>-->
+			<!--<version>${jxcell.version}</version>-->
+		<!--</dependency>-->
 
 		<!-- httpclient -->
 		<dependency>
@@ -368,10 +368,30 @@
 		</dependency>
 
 		<!-- solr -->
+		<!--<dependency>-->
+			<!--<groupId>com.chengshu</groupId>-->
+			<!--<artifactId>solrApi</artifactId>-->
+			<!--<version>2.0.1</version>-->
+		<!--</dependency>-->
+
+		<!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
 		<dependency>
-			<groupId>com.chengshu</groupId>
-			<artifactId>solrApi</artifactId>
-			<version>2.0.1</version>
+			<groupId>com.rabbitmq</groupId>
+			<artifactId>amqp-client</artifactId>
+			<version>5.2.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk16 -->
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk16</artifactId>
+			<version>1.46</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20170516</version>
 		</dependency>
 	</dependencies>
 

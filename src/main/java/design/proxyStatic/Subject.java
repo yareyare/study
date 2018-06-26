@@ -5,5 +5,5 @@ package design.proxyStatic;
  * 抽象主题
  */
 public interface Subject {
-    public void request();
+    void request();
 }

@@ -1,6 +1,5 @@
 package jvm.a;
 
-import com.sun.tools.javac.util.List;
 
 import java.util.ArrayList;
 
