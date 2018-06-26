@@ -1,4 +1,4 @@
-package singleton;
+package design.singleton;
 
 /**
  * @author  张彦
