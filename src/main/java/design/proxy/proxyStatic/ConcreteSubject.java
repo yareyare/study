@@ -1,4 +1,4 @@
-package design.proxyStatic;
+package design.proxy.proxyStatic;
 
 /**
  * Created by ivy on 2017/3/17.
