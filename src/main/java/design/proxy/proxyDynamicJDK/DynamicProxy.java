@@ -15,11 +15,11 @@ public class DynamicProxy implements InvocationHandler {
 
         //被织入的内容，开始时间
         long start = System.currentTimeMillis();
-        Object invoke = method.invoke(targetObject, args);
+        Object result = method.invoke(targetObject, args);
         //被织入的内容，结束时间
         Long span = System.currentTimeMillis() - start;
         System.out.println("共用时：" + span);
-        return invoke;
+        return result;
     }
 
     /**
